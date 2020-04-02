@@ -241,10 +241,10 @@ to {
 to {
     width: 65%}
 }#Skill-mysql {
-    animation: Animate-C 4s;
-    -webkit-animation: Animate-C 4s;
-    -moz-animation: Animate-C 4s;
-    -o-animation: Animate-C 4s;
+    animation: Animate-mysql 4s;
+    -webkit-animation: Animate-mysql 4s;
+    -moz-animation: Animate-mysql 4s;
+    -o-animation: Animate-mysql 4s;
     width: 80%;
     height: 50px;
     position: absolute;
@@ -262,13 +262,13 @@ to {
 }
 to {
     width: 80%}
-}@-moz-keyframes Animate-C {
+}@-moz-keyframes Animate-mysql {
     from {
     width: 10px;
 }
 to {
     width: 80%}
-}@-o-keyframes Animate-C {
+}@-o-keyframes Animate-mysql {
     from {
     width: 10px;
 }
@@ -344,6 +344,27 @@ to {
 .container {
   padding: 2px 16px;
 }
+
+
+.card1 {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
 	
 </style>
 </head>
@@ -550,33 +571,31 @@ to {
 
   <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="Projects">
  <div class="container">
- <div class="outer-wrap">
- <h2 class="mb-5">Projects</h2>
-<div class="card">
-  <a href="https://github.com/ovishal15/mydentist.git" class="container">
-    <h3><b>MyDentist</b></h3> 
-    <p>IOS application developed in a team of 5, using Swift and Core Data, handling the work of a dental clinic.</p> 
-  </a>
-</div>
+	<div class="outer-wrap">
+		<h2 class="mb-5">Projects</h2>
+			<a href="https://github.com/ovishal15/mydentist.git">
+			<div class="card1 card-1">
+			<h3><b>MyDentist</b></h3> 
+			 <p>Developed an IOS application in a team size of 5 using SWift and Core Data.</p> 
+			<p>The application was able to handle a dental clinic from managing dentist appointments and helping patients through virtual treatment in case of an emergency.</p>
+  			</div>
+			</a>
+			<a href="https://github.com/ovishal15/eCampus.git">
+			<div class="card1 card-1">
+			<h3><b>eCampus</b></h3> 
+			 <p>Developed a Web application in a team size of 4 using PHP and MYSQL.</p> 
+			<p>The application was able to handle digitization of an entire campus including payroll system for the professor to an online lecture of students.</p>
+  			</div>
+			</a>
+			<a href="https://github.com/ovishal15/CRM.git">
+			<div class="card1 card-1">
+			<h3><b>CRM: General Insurance</b></h3> 
+			 <p>Developed a Web application in a team size of 3 using PHP and MYSQL.</p> 
+			<p>The application had potential to reduce paperwork in purchasing vehicle insurance by 70%. Helped buyers compare different insurances and select best as per requirements.</p>
+			</div>
+			</a>
 
-<p> </p>
-<div class="card">
-  <a href="https://github.com/ovishal15/eCampus.git" class="container">
-    <h3><b>Ecampus</b></h3> 
-    <p>Developed a Web application in a team size of 4 using PHP and MYSQL.</p> 
-	<p>The application was able to handle digitization of an entire campus including payroll system for the professor to an online lecture of students.</p>
-  </a>
-</div>
-
-<p> </p>
-<div class="card">
-  <a href="https://github.com/ovishal15/CRM.git" class="container">
-    <h3><b>CRM: General Insurance</b></h3> 
-    <p>Developed a Web application in a team size of 3 using PHP and MYSQL.</p> 
-	<p>The application had potential to reduce paperwork in purchasing vehicle insurance by 70%. Helped buyers compare different insurances and select best as per requirements.</p>
-  </a>
-</div>
-</div>
+	</div>
 </div>
 	  </section>
 	
