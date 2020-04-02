@@ -18,24 +18,8 @@
  
 
  <style>
-  .skills
-  {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-  }
-
-  .mysql {width: 90%; background-color: #4CAF50;}
-  .html {width: 90%; background-color: #808080;}
-  .css {width: 80%; background-color: #2196F3;}
-  .js {width: 65%; background-color: #2196F3;}
-  .php {width: 60%; background-color: #808080;}
-  .java {width: 65%; background-color: #4CAF50;}
-  .swift {width: 70%; background-color: #f44336;}
-  .selenium {width: 60%; background-color: #f44336;}
   .btn {
-  background-color:#fd7e14;
+  background-color:#bd5d38;
   border: none;
   color: white;
   padding: 12px 30px;
@@ -44,7 +28,7 @@
   margin-top: 100px;
 }
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color:#bd5d38;
 }
 .main-area {padding: 2em;}
 .cards p {margin-bottom: 1.5em;}
@@ -56,115 +40,311 @@ img {
 	width: 100%;
 	height: auto;
 }
+/* SkillS*/
 
-/* Flexbox */
-@media screen and (min-width: 50em) {
-    
-    .outer-wrap {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-    
-    .content {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    
-    .main-area {
-        -webkit-flex: 1 1 auto;
-            -ms-flex: 1 1 auto;
-                flex: 1 1 auto;
-        -webkit-order: 1;
-            -ms-flex-order: 1;
-                order: 1;
-    }
-  
+#SkillBox {
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    width: 95%;
+    height: auto;
+    margin: 40px auto;
+    background-color: #fff;
+    //border: 1px solid #cdcdcd;
+    padding: 10px;
+    border-radius:20px;
+    -o-border-radius:20px;
+    -webkit-border-radius:20px;
+    -ms-border-radius:20px;
+    -moz-border-radius:20px;  
 }
-
-/* Card Based Layout - Base styles */
-
+#SkillBox img {
+    width: 20%;
+    height: 10%;
+    margin: auto 35%;
+    padding: 10px;
+}
+.SkillBar {
+    width: 90%;
+    height: 50px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 20px auto;
+}
+#Skill-HTML {
+    width: 90%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 50px;
+    position: absolute;
+    background-color: #ea8564;
+}
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-webkit-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-moz-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-o-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}#Skill-CSS {
+    animation: Animate-CSS 5s;
+    -webkit-animation: Animate-CSS 5s;
+    -moz-animation: Animate-CSS 5s;
+    -o-animation: Animate-CSS 5s;
+    width: 70%;
+    height: 50px;
+    position: absolute;
+    background-color: #55a69f;
+}
+@keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}@-webkit-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}@-moz-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}@-o-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}#Skill-javascript {
+    animation: Animate-javascript 5s;
+    -webkit-animation: Animate-javascript 5s;
+    -moz-animation: Animate-javascript 5s;
+    -o-animation: Animate-javascript 5s;
+    width: 60%;
+    height: 50px;
+    position: absolute;
+    background-color: #99856d;
+}
+@keyframes Animate-javascript {
+    from {
+    width: 10px;
+}
+to {
+    width: 60%}
+}@-webkit-keyframes Animate-javascript {
+    from {
+    width: 10px;
+}
+to {
+    width: 60%}
+}@-moz-keyframes Animate-javascript{
+    from {
+    width: 10px;
+}
+to {
+    width: 60%}
+}@-o-keyframes Animate-javascript {
+    from {
+    width: 10px;
+}
+to {
+    width: 60%}
+}#Skill-java {
+    animation: Animate-java 4s;
+    -webkit-animation: Animate-java 4s;
+    -moz-animation: Animate-java 4s;
+    -o-animation: Animate-java 4s;
+    width: 65%;
+    height: 50px;
+    position: absolute;
+    background-color: #c44e45;
+}
+@keyframes Animate-java {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}@-webkit-keyframes Animate-java {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}@-moz-keyframes Animate-java {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}@-o-keyframes Animate-java {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}#Skill-swift {
+    animation: Animate-swift 4s;
+    -webkit-animation: Animate-swift 4s;
+    -moz-animation: Animate-swift 4s;
+    -o-animation: Animate-swift 4s;
+    width: 65%;
+    height: 50px;
+    position: absolute;
+    background-color: #5aa669;
+}
+@keyframes Animate-swift {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}@-webkit-keyframes Animate-swift {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}@-moz-keyframes Animate-swift {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}@-o-keyframes Animate-swift {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}#Skill-mysql {
+    animation: Animate-C 4s;
+    -webkit-animation: Animate-C 4s;
+    -moz-animation: Animate-C 4s;
+    -o-animation: Animate-C 4s;
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    background-color: #970cc1;
+}
+@keyframes Animate-mysql {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-webkit-keyframes Animate-mysql {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-moz-keyframes Animate-C {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-o-keyframes Animate-C {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}#Skill-PHP {
+    animation: Animate-PHP 4s;
+    -webkit-animation: Animate-PHP 4s;
+    -moz-animation: Animate-PHP 4s;
+    -o-animation: Animate-PHP 4s;
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    background-color: #5A69A6;
+}
+@keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-o-keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}.Skill-Area {
+    z-index: 1;
+    float: left;
+    //position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+    //font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}
+.PercentText {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 15px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    //font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}
+/* Card*/
 .card {
-	background: white;
-	margin-bottom: 2em;	
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
 }
 
-.card a {
-	color: black;
-	text-decoration: none;
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.card a:hover {
-	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
-  transition: all 0.4s;
+.container {
+  padding: 2px 16px;
 }
-
-.card-content {
-	padding: 1.6em;
-}
-
-.card-content h2 {
-	margin-top: 0;
-	margin-bottom: .50em;
-	font-weight: normal;
-}
-
-.card-content p {
-	font-size: 95%;
-}
-
-/* Flexbox stuff */
-
-@media screen and (min-width: 50em) {
-    .cards {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-        -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        margin-top: -1em;
-    }
-
-    .card {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex: 0 1 calc(50% - .5em);
-            -ms-flex: 0 1 calc(50% - .5em);
-                flex: 0 1 calc(50% - .5em);
-        margin-bottom: 1em;
-    }
-}
-
-@media screen and (max-width: 39.9em) {
-  
-  .main-area {padding: 0em;}
-  .card {margin-bottom: 0em;}	
-}
-
-@media screen and (min-width: 60em) {
-    .cards {
-        margin-top: inherit;
-    }
-    
-    .card {
-        -webkit-flex: 0 1 calc(33% - 1em);
-            -ms-flex: 0 1 calc(33% - 1em);
-                flex: 0 1 calc(33% - 1em);
-        margin-bottom: 1em;
-    }
-}
-
-						
-						
+	
 </style>
 </head>
 
@@ -209,7 +389,9 @@ img {
         <div class="subheading mb-5">London, Ontario  | (519) 317-4629   |
           <a href="mailto:ovishal15@gmail.com">ovishal15@gmail.com</a>
         </div>
-        <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+        <p class="lead mb-5">A Developer/Tester concentrated on making extraordinary web encounters. Development and testing have been my obsession since the days I began working with PCs yet I wound up in website development/testing since 2011. I appreciate making very much planned, natural and functional sites and test them. I am a self-trained IOS Developer as well.</p>
+
+<p class="lead mb-5"> Having 2+ years of experience as a Software Specialist with Network Operations, I have created Problem Solving and Organization abilities. </p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/vishal-oza">
             <i class="fab fa-linkedin-in"></i>
@@ -309,45 +491,57 @@ img {
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
         <h2 class="mb-5">Skills</h2>
+<div id="SkillBox">
+  <div class="SkillBar">
+    <div id="Skill-HTML"> 
+      <span class="Skill-Area ">HTML</span>
+      <span class="PercentText ">90%</span>
+    </div>
+  </div>
+  
+  <div class="SkillBar">
+    <div id="Skill-CSS">
+      <span class="Skill-Area ">CSS</span>
+      <span class="PercentText ">70%</span>
+    </div>
+  </div>
 
-        <p>MYSQL</p>
-        <div class="container3">
-          <div class="skills mysql">90%</div>
-        </div>
-        <p>HTML</p>
-        <div class="container3">
-          <div class="skills html">90%</div>
-        </div>
-        <p>CSS</p>
-        <div class="container3">
-          <div class="skills css">80%</div>
-        </div>
-		
-		<p>SWIFT</p>
-        <div class="container3">
-          <div class="skills swift">70%</div>
-        </div>
+  <div class="SkillBar">
+    <div id="Skill-javascript">
+      <span class="Skill-Area ">JAVASCRIPT</span>
+      <span class="PercentText ">60%</span>
+    </div>
+  </div>
+  
+  <div class="SkillBar">
+    <div id="Skill-java">
+      <span class="Skill-Area ">JAVA</span>
+      <span class="PercentText ">65%</span>
+    </div>
+  </div>
+  
+  <div class="SkillBar">
+    <div id="Skill-swift">
+      <span class="Skill-Area ">SWIFT</span>
+      <span class="PercentText ">65%</span>
+    </div>
+  </div>
+  
+    <div class="SkillBar">
+    <div id="Skill-mysql">
+      <span class="Skill-Area ">MYSQL</span>
+      <span class="PercentText ">80%</span>
+    </div>
+  </div> 
+  
+  <div class="SkillBar">
+    <div id="Skill-PHP">
+      <span class="Skill-Area ">PHP</span>
+      <span class="PercentText ">50%</span>
+    </div>
+  </div> 
+</div>
 
-        <p>JavaScript</p>
-        <div class="container3">
-          <div class="skills js">65%</div>
-        </div>
-		 <p>JAVA</p>
-        <div class="container3">
-          <div class="skills java">65%</div>
-        </div>
-
-        <p>PHP</p>
-        <div class="container3">
-          <div class="skills php">60%</div>
-        </div>
-		
-		 <p>Selenium</p>
-        <div class="container3">
-          <div class="skills selenium">60%</div>
-        </div>
-
-       
 
       </div>
     </section>
@@ -358,78 +552,55 @@ img {
  <div class="container">
  <div class="outer-wrap">
  <h2 class="mb-5">Projects</h2>
-      <div class="content">
-        
-        <main class="main-area">
-          <section class="cards">
-            <article class="card">
-                    <a href="#">
-                        <div class="card-content">
-                            <h2>My Dentist</h2>
-                            <p>IOS Application developed in team of 5 to handle dental clinic from managing appoitments to provide tutorials to patients for primary care.</p>
-							<p>Applcation was developed using Swift programming language and Core data to handle database.</p>
-                        </div><!-- .card-content -->
-                    </a>
-                </article><!-- .card -->
-				
-				<article class="card">
-                    <a href="#">
-                        <div class="card-content">
-                            <h2>Ecampus</h2>
-                            <p>Web application developed in a team of 4.</p><p>Application was developed using PHP and MYSQL, handling every part of an institution creating a transparency between parents and faculty as well as help student to study on a digital platform.</p>
-                        </div><!-- .card-content -->
-                    </a>
-                </article><!-- .card -->
-				
-				<article class="card">
-                    <a href="#">
-                        <div class="card-content">
-                            <h2>CRM: General insurance</h2>
-                            <p>Web application developed in a team of 3 using PHP and MYSQL.</p> <p>Application was able to reduce 80% of paperwork while buying a vehicle insurance.</p>
-                        </div><!-- .card-content -->
-                    </a>
-                </article><!-- .card -->
-		</section>
-	</main>
-</div>	  
+<div class="card">
+  <a href="https://github.com/ovishal15/mydentist.git" class="container">
+    <h3><b>MyDentist</b></h3> 
+    <p>IOS application developed in a team of 5, using Swift and Core Data, handling the work of a dental clinic.</p> 
+  </a>
+</div>
+
+<p> </p>
+<div class="card">
+  <a href="https://github.com/ovishal15/eCampus.git" class="container">
+    <h3><b>Ecampus</b></h3> 
+    <p>Developed a Web application in a team size of 4 using PHP and MYSQL.</p> 
+	<p>The application was able to handle digitization of an entire campus including payroll system for the professor to an online lecture of students.</p>
+  </a>
+</div>
+
+<p> </p>
+<div class="card">
+  <a href="https://github.com/ovishal15/CRM.git" class="container">
+    <h3><b>CRM: General Insurance</b></h3> 
+    <p>Developed a Web application in a team size of 3 using PHP and MYSQL.</p> 
+	<p>The application had potential to reduce paperwork in purchasing vehicle insurance by 70%. Helped buyers compare different insurances and select best as per requirements.</p>
+  </a>
+</div>
 </div>
 </div>
 	  </section>
 	
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="testimonial">
+   <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="testimonial">
  <div class="container">
+ <div class="outer-wrap">
  <h2 class="mb-5">Testimonials</h2>
-  <main class="grid">
-    <article>
-      <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo">
-      <div class="text">
-        <h3>Seamlessly visualize quality</h3>
-        <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
-        <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Here's why</a>
-      </div>
-    </article>
-    <article>
-      <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo">
-      <div class="text">
-        <h3>Completely Synergize</h3>
-        <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
-        <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Here's how</a>
-      </div>
-    </article>
-    <article>
-      <img src="https://picsum.photos/600/400?image=1056" alt="Sample photo">
-      <div class="text">
-        <h3>Dynamically Procrastinate</h3>
-        <p>Completely synergize resource taxing relationships via premier niche markets.</p>
-        <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Read more</a>
-      </div>
-    </article>
-    
-    
  
-  </main>
+<div class="card">
+  <div class="container">
+    <h3><b>Janice Manning</b></h3> 
+    <p>Professor, Fanshawe College, London Ontario</p> 
+  </div>
 </div>
-    </section>
+</div>
+<p> </p>
+<div class="card">
+  <div class="container">
+    <h3><b>Pritish Majumdar</b></h3> 
+    <p>Team Lead, Networks, eClinical works.</p> 
+  </div>
+</div>
+</div>
+	  </section>
   <script src="jquery/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="jquery-easing/jquery.easing.min.js"></script>
